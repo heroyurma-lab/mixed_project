@@ -1,0 +1,12 @@
+<h1>Books</h1>
+
+{% for b in books %}
+    <p style="font-size:20px;">
+        {{ forloop.counter }}.
+        <a href="/books/{{ b.id }}/detail/">{{ b.title }}</a>
+    </p>
+{% endfor %}
+
+<div>
+    <a href="/home/">Exit</a>
+</div>

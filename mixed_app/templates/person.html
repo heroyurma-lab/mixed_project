@@ -1,0 +1,14 @@
+<h1>Person List</h1>
+
+{% for p in persons %}
+    <p style="font-size:20px;">
+        {{ forloop.counter }}.
+        <a href="/person/{{ p.id }}/detail/">
+            {{ p.name }} {{ p.surname }}
+        </a>
+    </p>
+{% endfor %}
+
+<div>
+    <a href="/home/">Exit</a>
+</div>

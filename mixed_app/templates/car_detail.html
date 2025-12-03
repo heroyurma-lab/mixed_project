@@ -1,0 +1,11 @@
+<h1>{{ car.name }}</h1>
+
+{% if car.image %}
+    <img src="{{ car.image.url }}" width="300"><br>
+{% endif %}
+
+<p><strong>Color:</strong> {{ car.color }}</p>
+<p><strong>Price:</strong> {{ car.price }}</p>
+<p><strong>New:</strong> {{ car.is_new }}</p>
+
+<a href="/cars/">Back</a>

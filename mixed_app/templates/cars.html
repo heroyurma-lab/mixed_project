@@ -1,0 +1,12 @@
+<h1>Cars</h1>
+
+{% for c in cars %}
+    <p style="font-size:20px;">
+        {{ forloop.counter }}.
+        <a href="/cars/{{ c.id }}/detail/">{{ c.name }}</a>
+    </p>
+{% endfor %}
+
+<div>
+    <a href="/home/">Exit</a>
+</div>
