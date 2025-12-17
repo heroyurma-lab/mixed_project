@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 """
 
 import os
+from myapp import create_app
+
+app = create_app()
+
 
 from django.core.wsgi import get_wsgi_application
 
